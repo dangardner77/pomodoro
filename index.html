@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e74c3c">
+</head>
+<body>
+    <div class="timer-container">
+        <svg class="tomato-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="55" r="45" fill="#e74c3c"/>
+            <ellipse cx="50" cy="55" rx="42" ry="44" fill="#c0392b" opacity="0.3"/>
+            <path d="M 45 12 Q 40 5 35 8 Q 32 15 40 18 Z" fill="#27ae60"/>
+            <path d="M 50 10 Q 45 2 40 5 Q 38 14 48 16 Z" fill="#2ecc71"/>
+            <path d="M 55 12 Q 60 5 65 8 Q 68 15 60 18 Z" fill="#27ae60"/>
+        </svg>
+        <h1 id="phase-name">Work</h1>
+        <div id="countdown">25:00</div>
+        <button id="start-btn">START</button>
+        <button id="reset-btn" style="display:none;">RESET</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
